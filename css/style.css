@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Yesteryear&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-image: url(../img/bg.svg);
+}
+
+/* container */
+.container{
+    width: 300px;
+    height: 250px;
+    background-color: #a40005;
+    background-blend-mode: multiply;
+    border-radius: 5%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 14px;
+    box-shadow:  8px 8px 18px #afafaf,
+                 -8px -8px 18px #ffffff;;
+    padding: 10px;
+    overflow: hidden;
+}
+
+
+/* can css */
+.can{
+    width: 100%;
+    position: absolute;
+    height: 1;
+    top: 21%;
+    left: -95px;
+    filter: drop-shadow(4px 7px 35px black);
+}
+
+
+
+/* logo */
+.logo{
+    width: 20%;
+}
+
+
+
+/* wish text css */
+.wish-container{
+    font-family: 'Itim', cursive;
+    text-align: center;
+    margin-top: 25px;
+    margin-left: 160px;
+}
+
+.wish-container p{
+    font-size: 20px;
+    color: white;
+}
+.wish-container h1{
+    font-size: 35px;
+    color: white;
+}
+.wish-container h2{
+    font-size: 30px;
+    color: white;
+}
+
+
+/* btn css */
+.btn{
+    text-decoration: none;
+    padding: 10px 17px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    position: absolute;
+    top: 210px;
+    left: 192px;
+    border-radius: 31px;
+    font-family: roboto;
+    font-size: 12px;
+}
+
+
+
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+
+
+
+
+
+
+/* animations */
+
+/* text animation */
+.wish-container {
+	-webkit-animation: wish 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: wish 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+ @-webkit-keyframes wish{
+    0% {
+      -webkit-transform: translateX(1000px);
+              transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes wish {
+    0% {
+      -webkit-transform: translateX(1000px);
+              transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+
+
+
+  /* button animation */
+  .btn {
+	-webkit-animation: btn 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: btn 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+ @-webkit-keyframes btn{
+    0% {
+      -webkit-transform: translateX(1000px);
+              transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes btn {
+    0% {
+      -webkit-transform: translateX(1000px);
+              transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+
+
+
+
+  /* image animation */
+  .can {
+	-webkit-animation: can 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: can 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+ @-webkit-keyframes can {
+    0% {
+      -webkit-transform: translateX(-1000px);
+              transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes can {
+    0% {
+      -webkit-transform: translateX(-1000px);
+              transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+
+
